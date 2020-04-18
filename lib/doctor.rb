@@ -22,6 +22,7 @@ class Doctor
    
    def patients
      Appointment.all.select do |appointment|
+       binding.pry
        appointment.patient
      end
    end
