@@ -21,7 +21,7 @@ class Doctor
    end
    
    def patients
-     Appointment.all.select do |appointment|
+     Appointment.all.map do |appointment|
        binding.pry
        appointment.patient
      end
