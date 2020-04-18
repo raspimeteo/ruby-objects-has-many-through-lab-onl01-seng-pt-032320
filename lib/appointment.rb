@@ -16,7 +16,7 @@ class Appointment
   end
   
   def patient
-    Appointment.all.select {|appointment| appointment.patient}
+    # Appointment.all.select {|appointment| appointment.patient}
   end
   
 end
